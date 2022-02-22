@@ -5,3 +5,6 @@ start:
 
 publish:
 	npm publish --dry-ru
+
+make lint:
+	npx eslint .
