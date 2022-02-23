@@ -10,6 +10,4 @@ make lint:
 	npx eslint .
 
 brain-even:
-
-start:	
 	node bin/brain-even.js

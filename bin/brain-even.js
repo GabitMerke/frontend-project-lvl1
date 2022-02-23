@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /* eslint-disable indent */
 import readlineSync from 'readline-sync';
 
