@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 /* eslint-disable indent */
-
+import * as say from '../src/index.js';
 import readlineSync from 'readline-sync';
 
-console.log('Welcome to the Brain Games!');
-const name = readlineSync.question('May I have your name? ');
-console.log(`Hello, ${name}! \nWhat is the result of the expression?`);
+// console.log('Welcome to the Brain Games!');
+// const name = readlineSync.question('May I have your name? ');
+console.log('What is the result of the expression?');
 let randNum1 = Math.round(Math.random() * 10);
 let randNum2 = Math.round(Math.random() * 10);
 const arrOperator = ['-', '+', '*'];
@@ -19,7 +19,6 @@ const Func = (a) => {
     if (a === '*') {
         return randNum2 * randNum1;
     }
-    // operator = arrOperator[Math.floor(Math.random() * 3)];
 };
 for (let n = 0; n < 3; n += 1) {
     const operator = arrOperator[Math.floor(Math.random() * 3)];
@@ -29,10 +28,10 @@ if (Number(num )=== Func(operator)) {
     randNum1 = Math.round(Math.random() * 10);
     randNum2 = Math.round(Math.random() * 10);
 } else {
-    console.log(`'${num}' is wrong answer ;(. Correct answer was '${Func(operator)}'.\n Let's try again, ${name}!`);
+    console.log(`'${num}' is wrong answer ;(. Correct answer was '${Func(operator)}'.\n Let's try again, ${say.name}!`);
     break;
 }
 if (n == 2) {
-    console.log('Congratulations, Sam!');
+    console.log(`Congratulations, ${say.name}`);
 } 
 }
