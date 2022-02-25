@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+/* eslint-disable indent */
+import * as say from '../src/index.js';
+import readlineSync from 'readline-sync';
+
+let randNum1 = Math.round(Math.random() * 10);
+let randNum2 = Math.round(Math.random() * 10);
+
+
+
+const NOD =(x, y) => {
+	if (y > x) return NOD(y, x);
+	if (!y) return x;
+	return NOD(y, x % y);
+};
+for (let n = 0; n < 3; n += 1) {
+    const num = readlineSync.question(`Question: ${randNum1} ${randNum2} \nYour answer: `);
+    if (Number(num) === NOD(randNum1, randNum2)) {
+        console.log('Correct!');
+        randNum1 = Math.round(Math.random() * 10);
+        randNum2 = Math.round(Math.random() * 10);
+} else {
+    console.log(`'${num}' is wrong answer ;(. Correct answer was '${NOD(randNum1, randNum2)}'.\nLet's try again, ${say.name}!`);
+    break;
+} if (n == 2) {
+    console.log(`Congratulations, ${say.name}`);
+
+}
+}
