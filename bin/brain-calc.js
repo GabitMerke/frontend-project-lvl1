@@ -28,8 +28,7 @@ if (Number(num )=== Func(operator)) {
     randNum1 = Math.round(Math.random() * 10);
     randNum2 = Math.round(Math.random() * 10);
 } else {
-    console.log(`'${num}' is wrong answer ;(. Correct answer was '${Func(operator)}'.\n Let's try again, ${say.name}!`);
-    break;
+    
 }
 if (n == 2) {
     console.log(`Congratulations, ${say.name}`);

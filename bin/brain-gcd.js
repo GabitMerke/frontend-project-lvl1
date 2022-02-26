@@ -20,10 +20,9 @@ for (let n = 0; n < 3; n += 1) {
         randNum1 = Math.round(Math.random() * 10);
         randNum2 = Math.round(Math.random() * 10);
 } else {
-    console.log(`'${num}' is wrong answer ;(. Correct answer was '${NOD(randNum1, randNum2)}'.\nLet's try again, ${say.name}!`);
+    say.fun(num, NOD(randNum1, randNum2), say.name);
     break;
 } if (n == 2) {
-    console.log(`Congratulations, ${say.name}`);
-
-}
+    say.fun2(say.name);
+  }   
 }
