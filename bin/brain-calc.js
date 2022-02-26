@@ -3,8 +3,6 @@
 import * as say from '../src/index.js';
 import readlineSync from 'readline-sync';
 
-// console.log('Welcome to the Brain Games!');
-// const name = readlineSync.question('May I have your name? ');
 console.log('What is the result of the expression?');
 let randNum1 = Math.round(Math.random() * 10);
 let randNum2 = Math.round(Math.random() * 10);
@@ -28,9 +26,10 @@ if (Number(num )=== Func(operator)) {
     randNum1 = Math.round(Math.random() * 10);
     randNum2 = Math.round(Math.random() * 10);
 } else {
-    
+    say.fun(num, Func(operator), say.name);
+    break;
 }
 if (n == 2) {
-    console.log(`Congratulations, ${say.name}`);
+    say.fun2(say.name);
 } 
 }

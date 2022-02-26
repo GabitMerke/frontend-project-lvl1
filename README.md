@@ -6,3 +6,5 @@ brain calc:
 https://asciinema.org/a/pQ1lvtxioUrufp42hvIcLncoq
 brain gcd
 https://asciinema.org/a/5RDn4C6fjZlEDUeu9wpcfAqUA
+brain progression
+https://asciinema.org/a/7TZXiYM5dhyimFrynii4LOGur
