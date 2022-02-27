@@ -26,7 +26,7 @@ if (randNum % 2 === 0 && num === 'yes') {
  
     randNum = Math.round(Math.random() * 100);
 } else {
-    console.log(`${num} is wrong answer ;(. Correct answer was ${func4(randNum)}. \n Let's try again, ${name}!`);
+    console.log(`'${num}' is wrong answer ;(. Correct answer was '${func4(randNum)}'.\n Let's try again, ${name}!`);
 break;
 }
 if (n === 2) {
