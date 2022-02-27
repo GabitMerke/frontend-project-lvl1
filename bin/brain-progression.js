@@ -17,7 +17,8 @@ const func3 = () => {
     }
     return arr;
 };
-let res = func3();
+let res = [];
+res = func3();
 
 let index2 = Math.round(Math.random() * res.length);
 res[index2] = '..';
