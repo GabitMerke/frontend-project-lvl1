@@ -5,7 +5,7 @@ import readlineSync from 'readline-sync';
 
 console.log('What number is missing in the progression?');
 
-let index = Math.round(Math.random() * (10 - 5) + 5);
+let index = Math.round(Math.random() * (10 - 4) + 4);
 let rand = Math.round(Math.random() * 100);
 let progr = Math.round(Math.random() * 10);
 
