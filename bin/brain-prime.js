@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /* eslint-disable indent */
-import * as say from '../src/index.js';
 import readlineSync from 'readline-sync';
+import * as say from '../src/index.js';
 
 console.log('Answer "yes" if given number is prime. Otherwise answer "no"');
 
@@ -17,7 +17,6 @@ const funPrime = (n) => {
 };
 for (let n1 = 0; n1 < 3; n1 += 1) {
     const rand = Math.round(Math.random() * (100 - 2) + 2);
-    //console.log(funPrime(rand));
     const num = readlineSync.question(`Question: ${rand} \nYour answer: `);
     if (funPrime(rand) === num) {
         console.log('Correct!');
