@@ -18,23 +18,35 @@ const func3 = () => {
     }
     return arr;
 };
+const fun5 = (arg) => {
+    if (isNaN(res[arg - 1] + progr)) {
+        return res[arg + 1] - progr;
+    }
+    else {
+         return res[arg - 1] + progr;
+        }
+};
 let res = func3();
 
-let index2 = Math.round(Math.random() * res.length);
+let index2 = Math.round(Math.random() * (res.length - 1 ) + 1);
 res[index2] = '..';
 
 for (let n = 0; n < 3; n += 1) {
+    //console.log(fun5(index2));
     const num = readlineSync.question(`Question: ${res.join(' ')} \nYour answer: `);
-    
-    if (Number(num) == res[index2 - 1] + progr) {
+    //console.log(res[index2 - 1] + progr);
+    //console.log(index2);
+    // console.log(res);
+    if (Number(num) === fun5(index2)) {
         console.log('Correct!');
         rand = Math.round(Math.random() * 100);
         progr = Math.round(Math.random() * 10);
         res = func3();
         index2 = Math.round(Math.random() * res.length);
         res[index2] = '..';
+       // console.log(res[index2 - 1] + progr);
     } else {
-        say.fun(num, res[index2 - 1] + progr, say.name);
+        say.fun(num, fun5(index2), say.name);
         break;
     }
     if (n === 2) {
@@ -42,3 +54,4 @@ for (let n = 0; n < 3; n += 1) {
     }
     
 }
+
