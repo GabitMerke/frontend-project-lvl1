@@ -21,6 +21,8 @@ let res = func3();
 const fun5 = (arg) => {
     if (!Number.isNaN(res[arg - 1] + progr)) {
         return res[arg + 1] - progr;
+    } else if (!Number.isNaN(res[arg + 1] - progr)) {
+        return res[arg - 1] + progr;
     } else {
         return res[arg - 1] + progr;
     }
