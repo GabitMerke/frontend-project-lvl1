@@ -21,14 +21,15 @@ let res = func3();
 const fun5 = (arg) => {
     if (arg === 0) {
         return res[arg + 1] - progr;
-    } else if (arg === res.length - 1) {
+    } 
+    else if (arg === res.length - 1) {
         return res[arg - 1] + progr;
     } else {
         return res[arg - 1] + progr;
     }
 };
 
-let index2 = Math.round(Math.random() * (res.length - 1 ) + 1);
+let index2 = Math.round(Math.random() * (res.length - 1) + 1);
 res[index2] = '..';
 
 for (let n = 0; n < 3; n += 1) {
@@ -46,5 +47,5 @@ for (let n = 0; n < 3; n += 1) {
     }
     if (n === 2) {
         say.fun2(say.name);
-    }    
+    }
 }
