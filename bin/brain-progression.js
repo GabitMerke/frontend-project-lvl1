@@ -5,7 +5,8 @@ import readlineSync from 'readline-sync';
 
 console.log('What number is missing in the progression?');
 
-let index = Math.round(Math.random() * (10 - 4) + 4);
+let index = Math.round(Math.random() * (10 - 5) + 5);
+//console.log(index);
 let rand = Math.round(Math.random() * 100);
 let progr = Math.round(Math.random() * 10);
 
@@ -17,14 +18,13 @@ const func3 = () => {
     }
     return arr;
 };
-let res = [];
-res = func3();
+let res = func3();
 
 let index2 = Math.round(Math.random() * res.length);
 res[index2] = '..';
 
 for (let n = 0; n < 3; n += 1) {
-    const num = readlineSync.question(`Question: ${res} \nYour answer: `);
+    const num = readlineSync.question(`Question: ${res.join(' ')} \nYour answer: `);
     
     if (Number(num) == res[index2 - 1] + progr) {
         console.log('Correct!');
