@@ -24,9 +24,8 @@ const fun5 = (arg) => {
     }
     else if (arg === res.length - 1) {
         return res[arg - 1] + progr;
-    } else {
-        return res[arg - 1] + progr;
     }
+    return res[arg - 1] + progr;
 };
 
 let index2 = Math.round(Math.random() * (res.length - 1) + 1);
