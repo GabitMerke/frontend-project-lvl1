@@ -17,6 +17,7 @@ const func3 = () => {
     }
     return arr;
 };
+let res = func3();
 const fun5 = (arg) => {
     if (!Number.isNaN(res[arg - 1] + progr)) {
         return res[arg + 1] - progr;
@@ -25,7 +26,6 @@ const fun5 = (arg) => {
          return res[arg - 1] + progr;
         }
 };
-let res = func3();
 
 let index2 = Math.round(Math.random() * (res.length - 1 ) + 1);
 res[index2] = '..';
