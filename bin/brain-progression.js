@@ -11,14 +11,14 @@ let progr = Math.round(Math.random() * 10);
 
 const func3 = () => {
     const arr = [];
-    while (arr.length != index) {
+    while (arr.length !== index) {
         arr.push(rand + progr);
         rand += progr;
     }
     return arr;
 };
 const fun5 = (arg) => {
-    if (isNaN(res[arg - 1] + progr)) {
+    if (!Number.isNaN(res[arg - 1] + progr)) {
         return res[arg + 1] - progr;
     }
     else {
