@@ -1,12 +1,10 @@
 #!/usr/bin/env node
 /* eslint-disable indent */
-import * as say from '../src/index.js';
 import readlineSync from 'readline-sync';
+import * as say from '../src/index.js';
 
 let randNum1 = Math.round(Math.random() * 10);
 let randNum2 = Math.round(Math.random() * 10);
-
-
 
 const NOD =(x, y) => {
 	if (y > x) return NOD(y, x);
