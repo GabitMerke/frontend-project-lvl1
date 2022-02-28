@@ -21,7 +21,7 @@ for (let n = 0; n < 3; n += 1) {
     say.fun(num, NOD(randNum1, randNum2), say.name);
     break;
 }
-if (n === 2) {
-    say.fun2(say.name);
-}   
+    if (n === 2) {
+        say.fun2(say.name);
+    }
 }
