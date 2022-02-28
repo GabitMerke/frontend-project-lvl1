@@ -21,7 +21,7 @@ let res = func3();
 const fun5 = (arg) => {
     if (arg === 0) {
         return res[arg + 1] - progr;
-    } 
+    }
     else if (arg === res.length - 1) {
         return res[arg - 1] + progr;
     } else {
