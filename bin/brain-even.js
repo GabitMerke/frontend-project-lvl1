@@ -9,8 +9,7 @@ let randNum = Math.round(Math.random() * 100);
 const func4 = (arg) => {
     if (arg % 2 === 0) {
         return 'yes';
-    }
-    else {
+    } else {
         return 'no';
     }
 };
@@ -19,17 +18,15 @@ for (let n = 0; n < 3; n += 1) {
     const num = readlineSync.question(`Question: ${randNum} \nYour answer: `);
 if (randNum % 2 === 0 && num === 'yes') {
     console.log('Correct!');
-    
     randNum = Math.round(Math.random() * 100);
 } else if (randNum % 2 !== 0 && num === 'no') {
     console.log('Correct!');
- 
     randNum = Math.round(Math.random() * 100);
 } else {
     console.log(`'${num}' is wrong answer ;(. Correct answer was '${func4(randNum)}'.\n Let's try again, ${name}!`);
 break;
 }
-if (n === 2) {
-    console.log(`Congratulations, ${name}!`);
-}
+    if (n === 2) {
+        console.log(`Congratulations, ${name}!`);
+    }
 }
