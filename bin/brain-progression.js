@@ -1,12 +1,11 @@
 #!/usr/bin/env node
 /* eslint-disable indent */
-import * as say from '../src/index.js';
 import readlineSync from 'readline-sync';
+import * as say from '../src/index.js';
 
 console.log('What number is missing in the progression?');
 
-let index = Math.round(Math.random() * (10 - 5) + 5);
-//console.log(index);
+const index = Math.round(Math.random() * (10 - 5) + 5);
 let rand = Math.round(Math.random() * 100);
 let progr = Math.round(Math.random() * 10);
 
