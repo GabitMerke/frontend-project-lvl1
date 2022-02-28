@@ -7,7 +7,7 @@ console.log('Answer "yes" if given number is prime. Otherwise answer "no"');
 
 const funPrime = (n) => {
     let flag = true;
-    for (let i = 2; i < n; i += i) {
+    for (let i = 2; i < n; i += 1) {
         if (n % i === 0) {
             flag = false;
             break;
