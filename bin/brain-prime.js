@@ -19,8 +19,8 @@ for (let n1 = 0; n1 < 3; n1 += 1) {
     const rand = Math.round(Math.random() * (100 - 2) + 2);
     //console.log(funPrime(rand));
     const num = readlineSync.question(`Question: ${rand} \nYour answer: `);
-    if (funPrime(rand) === num)  {
-        console.log('Correct!');        
+    if (funPrime(rand) === num) {
+        console.log('Correct!');
     } else {
         say.fun(num, funPrime(rand), say.name);
         break;
