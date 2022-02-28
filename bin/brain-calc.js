@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /* eslint-disable indent */
-import * as say from '../src/index.js';
 import readlineSync from 'readline-sync';
+import * as say from '../src/index.js';
 
 console.log('What is the result of the expression?');
 let randNum1 = Math.round(Math.random() * 10);
@@ -21,7 +21,7 @@ const Func = (a) => {
 for (let n = 0; n < 3; n += 1) {
     const operator = arrOperator[Math.floor(Math.random() * 3)];
     const num = readlineSync.question(`Question: ${randNum1} ${operator} ${randNum2} \nYour answer: `);
-if (Number(num )=== Func(operator)) {
+if (Number(num) === Func(operator)) {
     console.log('Correct!');
     randNum1 = Math.round(Math.random() * 10);
     randNum2 = Math.round(Math.random() * 10);
@@ -29,7 +29,7 @@ if (Number(num )=== Func(operator)) {
     say.fun(num, Func(operator), say.name);
     break;
 }
-if (n == 2) {
+if (n === 2) {
     say.fun2(say.name);
-} 
+}
 }
