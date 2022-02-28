@@ -3,4 +3,3 @@
 /* exported */
 
 import name from '../src/cli.js';
-/* exported name*/
