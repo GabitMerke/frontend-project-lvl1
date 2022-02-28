@@ -9,9 +9,8 @@ let randNum = Math.round(Math.random() * 100);
 const func4 = (arg) => {
     if (arg % 2 === 0) {
         return 'yes';
-    } else {
-        return 'no';
     }
+    return 'no';
 };
 
 for (let n = 0; n < 3; n += 1) {
