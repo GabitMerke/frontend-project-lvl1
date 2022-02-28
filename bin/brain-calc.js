@@ -14,9 +14,7 @@ const Func = (a) => {
     if (a === '-') {
         return randNum1 - randNum2;
     }
-    if (a === '*') {
-        return randNum2 * randNum1;
-    }
+    return randNum2 * randNum1;
 };
 for (let n = 0; n < 3; n += 1) {
     const operator = arrOperator[Math.floor(Math.random() * 3)];
